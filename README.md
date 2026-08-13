@@ -39,4 +39,10 @@ Assigned primary and foreign keys by establishing strict 1to many relationships 
 
 ## **Exploratory Data Analysis(EDA) & DAX Development:**
 
+### **Step 6: Price & Elasticity Analysis:**
+
+Built a scatter plot in PowerBI comparing 'Price_Per_Unit' against 'Quantity'. A linear trendline is applied thorugh further analysis visual, proving a near-zero correlation and confirming an inelastic demand curve across core retail products.  
+
+
+
 
