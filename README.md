@@ -28,13 +28,15 @@ Evaluated data quality by checking null values. However, data has no null values
 ### **Step 4: Data Modeling & Star Schema:** 
 
 Structured a clean Star Schema by separating data intothree dimension tables and one core fact table.
-Dimcustomer (Customer data)
-Dimdistrict (Geography data)
-Dimstores (Stores location data)
-FactSales (Sales transaction data)
+Dimcustomer (Customer Attributes)
+Dimdistrict (Demography & Geography)
+Dimstores (Stores locations)
+FactSales (Core Transaction Metrics)
 
-### **Step 5: Surrogate Key Mapping:**
+### **Step 5: Relational Key Mapping:**
 
 Assigned primary and foreign keys by establishing strict 1to many relationships between dimensions and fact table. 
+
+## **Exploratory Data Analysis(EDA) & DAX Development:**
 
 
