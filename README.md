@@ -141,5 +141,38 @@ Executed INNER JOIN queries between Factsales and dimcustomer to identify top sp
                           FROM FactSales
                           GROUP BY Customer_ID;
 
+### **Step 13: Retention Tracking & Purchase Gap:
+
+Engineered a T-SQL query utilizing LAG() and DATEDIFF() to calculate the average repeat purchase interval.
+
+
+#### **SQL**
+
+                        - WITH CustomerOrders AS (
+                             SELECT
+                               Customer_ID,
+                               Date,
+                               LAG(Date) OVER (
+                               PARTITION BY Customer_ID
+                               ORDER BY Date
+                               ) AS Previous_Order_Date
+                             FROM FactSales
+                          ),
+                          OrderGaps AS (
+                          SELECT
+                             Customer_ID,
+                             Date,
+                             Previous_Order_Date,
+                             DATEDIFF(day, Previous_Order_Date, Date) AS Days_Between_Orders
+                            FROM CustomerOrders
+                          WHERE Previous_Order_Date IS NOT NULL
+                          )
+                         SELECT
+                            AVG(Days_Between_Orders) AS Avg_Days_Between_Purchases
+                         FROM OrderGaps;
+
+### **Data Quality Insights:** 
+The query returned NULL because every customer record currently contains exactly one order, indicating that customer repeat retention is 0% and highlighting a critical business opportunity for automated post-purchase marketing.
+
 
 
