@@ -171,8 +171,8 @@ Engineered a T-SQL query utilizing LAG() and DATEDIFF() to calculate the average
                             AVG(Days_Between_Orders) AS Avg_Days_Between_Purchases
                          FROM OrderGaps;
 
-### **Data Quality Insights:** 
+#### **Data Quality Insights:** 
 The query returned NULL because every customer record currently contains exactly one order, indicating that customer repeat retention is 0% and highlighting a critical business opportunity for automated post-purchase marketing.
 
-
+## **Executive Dashboards Summary Insights:**
 
