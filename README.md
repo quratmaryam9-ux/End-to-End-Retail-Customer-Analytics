@@ -1,5 +1,7 @@
 ## End-to-End-Retail-Customer-Analytics
 
+### Dashboard Link: https://app.powerbi.com/groups/me/reports/0273ce11-7ed2-4797-8a27-3da349c87fb7/2be94e7fc2a68382eb88?experience=power-bi
+
 ## Business Problem and Strategic Context:
 
 This project evaluates retail sales performance, customer purchasing behavior, and pricing dynamics across **Beauty, Clothing and Electronics** categories in **Antwerp, Belgium**. By combining public demographic data with commercial transaction records, this project delivers actionable intelligence to optimize product margins, improve customer retention, and improve Average Order Value (AOV). 
