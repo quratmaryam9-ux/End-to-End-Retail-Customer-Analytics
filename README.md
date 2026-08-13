@@ -16,3 +16,11 @@ This project evaluates retail sales performance, customer purchasing behavior, a
 ### **Step 1: Data Aquisition & Integration:**
 
 Ingested official public demographic dataset from **OPEN DATA ANTWERPEN (Stad Antwerpen)** and integrated them with commercial retail transaction data from Kaggle to analyze regional market distribution and spending patterns. 
+
+### **Step 2:Database Setup & Transformation:**
+
+Loaded raw data into Azure SQL via SQL Server Management Studio (SSMS). Executed custom T-SQL transformation queries and database views to clean and stricture data. 
+
+### **Step 3: Data Profiling & Quality Check:**
+
+
