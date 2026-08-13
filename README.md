@@ -23,4 +23,18 @@ Loaded raw data into Azure SQL via SQL Server Management Studio (SSMS). Executed
 
 ### **Step 3: Data Profiling & Quality Check:**
 
+Evaluated data quality by checking null values. However, data has no null values. Inconsistent types of data is given proper data type such as text, char, varchar, nchar, nvarchar, date. Duplicate records are removed in order to maintain the data integrity. 
+
+### **Step 4: Data Modeling & Star Schema:** 
+
+Structured a clean Star Schema by separating data intothree dimension tables and one core fact table.
+Dimcustomer (Customer data)
+Dimdistrict (Geography data)
+Dimstores (Stores location data)
+FactSales (Sales transaction data)
+
+### **Step 5: Surrogate Key Mapping:**
+
+Assigned primary and foreign keys by establishing strict 1to many relationships between dimensions and fact table. 
+
 
