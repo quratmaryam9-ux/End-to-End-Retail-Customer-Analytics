@@ -74,7 +74,16 @@ Evaluated category basket consistency using Matrix tables and Bar charts, provin
 
                         - Average Basket Size = AVERAGE(vw_FactSales2[Quantity])
 
+### **Executive Sales Trends & Performances:**
 
+Built continuous time-series line charts and horizontal bar charts to track monthly revenue patterns and category leaderboards.
+
+
+#### **Code Snippet**
+
+                        - Total Revenue = SUM(vw_Factsales1[total_amount])
+                        - Total orders = DISTINCTCOUNT(vw_Factsales1[transaction_id])
+                        - Average Order Value = DIVIDE([Total Revenue],[Total orders],0)
 
 
 
