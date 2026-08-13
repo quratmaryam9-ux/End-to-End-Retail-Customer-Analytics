@@ -117,6 +117,7 @@ Used NTILE(10) window functions in SQL to calculate revenue concentration and is
                                 ELSE 'Remaining 90% Customers'
                                END;
 
+### **Step 12: 
 
 
 
