@@ -91,8 +91,31 @@ Built continuous time-series line charts and horizontal bar charts to track mont
 
 Used NTILE(10) window functions in SQL to calculate revenue concentration and isolate the top 10 VIP tier. 
 
-### **SQL**
+#### **SQL**
 
+
+                       - CREATE VIEW vw_Customer_Revenue_Concentration AS
+                         WITH CustomerDeciles AS (
+                           SELECT
+                               Customer_ID,
+                               Total_Amount,
+                               NTILE(10) OVER (ORDER BY Total_Amount DESC) AS Decile
+                           FROM FactSales
+                         )
+                         SELECT
+                              CASE
+                                 WHEN Decile = 1 THEN 'Top 10% Customers (VIP)'
+                                 ELSE 'Remaining 90% Customers'
+                              END AS Customer_Segment,
+                              COUNT(Customer_ID) AS Total_Customers,
+                              SUM(Total_Amount) AS Segment_Revenue,
+                              ROUND((SUM(Total_Amount) / SUM(SUM(Total_Amount)) OVER()) * 100, 2) AS Revenue_Share_Pct
+                         FROM CustomerDeciles
+                         GROUP BY
+                              CASE
+                                WHEN Decile = 1 THEN 'Top 10% Customers (VIP)'
+                                ELSE 'Remaining 90% Customers'
+                               END;
 
 
 
