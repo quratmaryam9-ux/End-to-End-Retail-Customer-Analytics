@@ -103,21 +103,43 @@ Used NTILE(10) window functions in SQL to calculate revenue concentration and is
                            FROM FactSales
                          )
                          SELECT
-                              CASE
-                                 WHEN Decile = 1 THEN 'Top 10% Customers (VIP)'
-                                 ELSE 'Remaining 90% Customers'
+                            CASE
+                                WHEN Decile = 1 THEN 'Top 10% Customers (VIP)'
+                                ELSE 'Remaining 90% Customers'
                               END AS Customer_Segment,
                               COUNT(Customer_ID) AS Total_Customers,
                               SUM(Total_Amount) AS Segment_Revenue,
                               ROUND((SUM(Total_Amount) / SUM(SUM(Total_Amount)) OVER()) * 100, 2) AS Revenue_Share_Pct
                          FROM CustomerDeciles
                          GROUP BY
-                              CASE
+                             CASE
                                 WHEN Decile = 1 THEN 'Top 10% Customers (VIP)'
                                 ELSE 'Remaining 90% Customers'
-                               END;
+                             END;
 
-### **Step 12: 
+### **Step 12: Customer Life-Time Value (CLV):
+
+Executed INNER JOIN queries between Factsales and dimcustomer to identify top spenders profile. 
+
+#### **SQL**
+
+                        - SELECT TOP 10
+                             c.Customer_ID,
+                             SUM(s.Total_Amount) AS Customer_Lifetime_Value
+                          FROM FactSales s
+                          JOIN DimCustomer c
+                             ON s.Customer_ID = c.Customer_ID
+                          GROUP BY
+                             c.Customer_ID
+                          ORDER BY
+                             Customer_Lifetime_Value DESC;
+
+                          CREATE VIEW vw_Customer_Lifetime_Value AS
+                          SELECT
+                             Customer_ID,
+                             SUM(Total_Amount) AS Customer_Lifetime_Value
+                          FROM FactSales
+                          GROUP BY Customer_ID;
 
 
 
