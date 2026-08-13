@@ -176,3 +176,5 @@ The query returned NULL because every customer record currently contains exactly
 
 ## **Executive Dashboards Summary Insights:**
 
+
+
