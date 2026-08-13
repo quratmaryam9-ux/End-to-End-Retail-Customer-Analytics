@@ -43,16 +43,36 @@ Assigned primary and foreign keys by establishing strict 1to many relationships 
 
 Built a scatter plot in PowerBI comparing 'Price_Per_Unit' against 'Quantity'. A linear trendline is applied thorugh further analysis visual, proving a near-zero correlation and confirming an inelastic demand curve across core retail products. 
 
-### **Category Pricing & AOV:**
+### **Step 7: Category Pricing & AOV:**
 
 Created combo charts (line + Clusrered Column) and financial summary tables to evaluate category revenue contribution. Developed DAX KPI measures. 
 
-### **Code Snippet**
+#### **Code Snippet**
 
                         - Average unit price = AVERAGE(FactSales[Price_per_Unit])
                         - Total Quantity Sold = SUM(FactSales[Quantity])
                         - AOV = DIVIDE([Total Revenue], [Total orders],0)
 
+### **Step 8: Basket Size Statistical Profiling:**
+
+Configured quantity bins (sizes 1 through 4) using Power BI's grouping features. Computed core statistical metrics via DAX to evaluate transaction distribution.
+
+#### **Code Snippet**
+
+                        - Mean Quantity = AVERAGE(FactSales[Quantity])
+                        - Median Quantity = MEDIAN(FactSales[Quantity])
+                        - Min Quantity = MIN(FactSales[Quantity])
+                        - Max Quantity = MAX(FactSales[Quantity])
+                        - StdDev Quantity = STDEV.S(FactSales[Quantity])
+
+### **Step 9: Category-Level Basket Behavior:**
+
+Evaluated category basket consistency using Matrix tables and Bar charts, proving an identical 2.51 average basket size across Clothing, Electronics, and Beauty.
+
+
+#### **Code Snippet**
+
+                        - Average Basket Size = AVERAGE(vw_FactSales2[Quantity])
 
 
 
