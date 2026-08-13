@@ -15,4 +15,4 @@ This project evaluates retail sales performance, customer purchasing behavior, a
 
 ### **Step 1: Data Aquisition & Integration:**
 
-Ingested official public demographic dataset from **OPEN DATA ANTWERPEN (Stad Antwerpen)** and integrated with 
+Ingested official public demographic dataset from **OPEN DATA ANTWERPEN (Stad Antwerpen)** and integrated them with commercial retail transaction data from Kaggle to analyze regional market distribution and spending patterns. 
