@@ -41,7 +41,19 @@ Assigned primary and foreign keys by establishing strict 1to many relationships 
 
 ### **Step 6: Price & Elasticity Analysis:**
 
-Built a scatter plot in PowerBI comparing 'Price_Per_Unit' against 'Quantity'. A linear trendline is applied thorugh further analysis visual, proving a near-zero correlation and confirming an inelastic demand curve across core retail products.  
+Built a scatter plot in PowerBI comparing 'Price_Per_Unit' against 'Quantity'. A linear trendline is applied thorugh further analysis visual, proving a near-zero correlation and confirming an inelastic demand curve across core retail products. 
+
+### **Category Pricing & AOV:**
+
+Created combo charts (line + Clusrered Column) and financial summary tables to evaluate category revenue contribution. Developed DAX KPI measures. 
+
+### **Code Snippet**
+
+                        - Average unit price = AVERAGE(FactSales[Price_per_Unit])
+                        - Total Quantity Sold = SUM(FactSales[Quantity])
+                        - AOV = DIVIDE([Total Revenue], [Total orders],0)
+
+
 
 
 
