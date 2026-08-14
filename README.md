@@ -178,5 +178,27 @@ The query returned NULL because every customer record currently contains exactly
 
 ## **Executive Dashboards Summary Insights:**
 
+## **Product Pricing Impact:**
+
 <img width="1315" height="727" alt="Image" src="https://github.com/user-attachments/assets/10599f2a-e1e9-426f-966c-c9284ba941c5" />
+
+## **EDA: PRICING ANALYSIS:**
+
+<img width="1311" height="756" alt="Image" src="https://github.com/user-attachments/assets/c14f38a0-36bc-4c80-af48-bc7678963314" />
+
+## **EDA: Basket Size:**
+
+<img width="1348" height="718" alt="Image" src="https://github.com/user-attachments/assets/20b35898-9cac-471d-9374-90c81d5effc1" />
+
+## **EDA: Basket Size by Category:**
+
+<img width="1353" height="752" alt="Image" src="https://github.com/user-attachments/assets/43d028cb-b86e-4353-ac5c-c565de557eb1" />
+
+## **Sales Trends:**
+
+<img width="1355" height="762" alt="Image" src="https://github.com/user-attachments/assets/c8518961-f281-4990-8c9a-a0745b7c00c0" />
+
+## **Customers Retention & Spendings:
+
+<img width="1343" height="752" alt="Image" src="https://github.com/user-attachments/assets/c3185319-f519-4421-853f-fa9294ddf1b8" />
 
