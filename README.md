@@ -4,20 +4,20 @@
 
 ## Business Problem and Strategic Context:
 
-This project evaluates retail sales performance, customer purchasing behavior, and pricing dynamics across **Beauty, Clothing and Electronics** categories in **Antwerp, Belgium**. By combining public demographic data with commercial transaction records, this project delivers actionable intelligence to optimize product margins, improve customer retention, and improve Average Order Value (AOV). 
+This project evaluates retail sales performance, customer purchasing behavior, and pricing dynamics across **Beauty, Clothing and Electronics** categories in **Antwerp, Belgium** region. By combining public demographic data from Antwerp with commercial transaction records, this project delivers actionable results to optimize product margins, improve customer retention, and improve Average Order Value (AOV). 
 
 ## Key Strategic Findings & Recommendations:
 
 * **Price Elasticity & Cross-Category Bundeling:** An inverse relationship has been observed between unit price and sales volume. Cross-category bundling **(e.g., Pairing high-margin Beauty products with high-volume Clothing products)** can drive higher total order value.
 * **Basket Size & Multi-Order Purchasing:** Orders show consistent multi-order purchases pattern across all categories **(Average 2.51 Items per category)**. Multi-buy incentives **(e.g., Buy 3 & Get 4 at 20% off)** will further nudge 1- to 2- items buyers into higher tiers.
-* **Seasonality & Demand Forcasting:** Clear annual sale seasonality was identified, peaking in May and Q4, with a sharp drop in October. Pre-planning inventory and promotional campaigns prior to high-demand months will prevent stock-out and smooth mid-autumn slumps.
-* **Customers Concentration Risk (80/20 Rule):** The top 10% VIP customers generate **38.2% of total store revenue.** Targeted VIP loyalty programs for this high-value decile is crucial to safegauding revenue.
+* **Seasonality & Demand Forcasting:** Clear annual sale seasonality are identified, peaking in May and Q4, with a sharp drop in October. Pre-planning inventory and promotional campaigns prior to high-demand months will prevent stock-out and better planning for low sale months.
+* **Customers Concentration Risk (80/20 Rule):** The top 10% VIP customers generate **38.2% of total store revenue.** Targeted VIP loyalty programs for this high-value customer segment is crucial to safegaud revenue.
 
 ## Data Engineering & Analytical Workflow:
 
 ### **Step 1: Data Acquisition & Integration:**
 
-Ingested official public demographic dataset from **OPEN DATA ANTWERPEN (Stad Antwerpen)** and integrated them with commercial retail transaction data from Kaggle to analyze regional market distribution and spending patterns. 
+Ingested official public demographic dataset from **OPEN DATA ANTWERPEN (Stad Antwerpen)** and integrated them with commercial retail transaction data from **Kaggle** to analyze regional market distribution and spending patterns. 
 
 ### **Step 2:Database Setup & Transformation:**
 
@@ -29,7 +29,7 @@ Evaluated data quality by checking null values. However, data has no null values
 
 ### **Step 4: Data Modeling & Star Schema:** 
 
-Structured a clean Star Schema by separating data intothree dimension tables and one core fact table.
+Structured a clean Star Schema by separating data into three dimension tables and one core fact table.
 Dimcustomer (Customer Attributes)
 Dimdistrict (Demography & Geography)
 Dimstores (Stores locations)
@@ -37,7 +37,7 @@ FactSales (Core Transaction Metrics)
 
 ### **Step 5: Relational Key Mapping:**
 
-Assigned primary and foreign keys by establishing strict 1to many relationships between dimensions and fact table. 
+Assigned primary and foreign keys by establishing strict 1 to many relationships between dimension tables and fact table. 
 
 ## **Exploratory Data Analysis(EDA) & DAX Development:**
 
@@ -57,7 +57,7 @@ Created combo charts (line + Clustered Column) and financial summary tables to e
 
 ### **Step 8: Basket Size Statistical Profiling:**
 
-Configured quantity bins (sizes 1 through 4) using Power BI's grouping features. Computed core statistical metrics via DAX to evaluate transaction distribution.
+Created quantity bins (sizes 1 through 4) using Power BI's grouping features. Computed core statistical metrics via DAX to evaluate transaction distribution.
 
 #### **DAX Measure**
 
@@ -78,7 +78,7 @@ Evaluated category basket consistency using Matrix tables and Bar charts, provin
 
 ### **Step 10: Executive Sales Trends & Performances:**
 
-Built continuous time-series line charts and horizontal bar charts to track monthly revenue patterns and category leaderboards. KPI cards are included with slicers to observe the data in different time period. 
+Built continuous time-series line charts and horizontal bar charts to track monthly revenue patterns and product performance by category. KPI cards are included with slicers to observe the data in different time period. 
 
 
 #### **DAX Measure**
