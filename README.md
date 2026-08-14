@@ -178,5 +178,5 @@ The query returned NULL because every customer record currently contains exactly
 
 ## **Executive Dashboards Summary Insights:**
 
-
+<img width="1315" height="727" alt="Image" src="https://github.com/user-attachments/assets/10599f2a-e1e9-426f-966c-c9284ba941c5" />
 
