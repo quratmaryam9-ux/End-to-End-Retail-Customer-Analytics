@@ -198,7 +198,7 @@ The query returned NULL because every customer record currently contains exactly
 
 <img width="1355" height="762" alt="Image" src="https://github.com/user-attachments/assets/c8518961-f281-4990-8c9a-a0745b7c00c0" />
 
-## **Customers Retention & Spendings:
+## **Customers Retention & Spendings:**
 
 <img width="1343" height="752" alt="Image" src="https://github.com/user-attachments/assets/c3185319-f519-4421-853f-fa9294ddf1b8" />
 
