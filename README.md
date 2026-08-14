@@ -1,5 +1,9 @@
 ## End-to-End-Retail-Customer-Analytics
 
+[![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](./Retail_Customer_Analytics.pbix)
+
+📥 **[Download Interactive Power BI Workbook (.pbix)](./Retail_Customer_Analytics.pbix?raw=true)**
+
 ## Business Problem and Strategic Context:
 
 This project evaluates retail sales performance, customer purchasing behavior, and pricing dynamics across **Beauty, Clothing and Electronics** categories in **Antwerp, Belgium** region. By combining public demographic data from Antwerp with commercial transaction records, this project delivers actionable results to optimize product margins, improve customer retention, and improve Average Order Value (AOV). 
