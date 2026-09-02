@@ -37,7 +37,7 @@ Dimstores (Stores locations)
 
 FactSales (Core Transaction Metrics)
 
-To maintain clean data integrity across regional stores, `Dimdistrict` serves as a normalized geographic dimension linked to `Dimstores`, feeding into the central `FactSales` engine.
+To maintain clean data integrity across regional stores, **Dimdistrict** serves as a normalized geographic dimension linked to **Dimstores**, feeding into the central **FactSales** engine.
 
 ### **Step 5: Relational Key Mapping:**
 
