@@ -25,13 +25,14 @@ Loaded raw data into Azure SQL via SQL Server Management Studio (SSMS). Executed
 
 Evaluated data quality by checking null values. However, data has no null values. Inconsistent types of data is given proper data type such as text, char, varchar, nchar, nvarchar, date. Duplicate records are removed in order to maintain the data integrity. 
 
-### **Step 4: Data Modeling & Star Schema:** 
+### **Step 4: Data Modeling & Architecture:** 
 
 Structured a clean Star Schema by separating data into three dimension tables and one core fact table.
 Dimcustomer (Customer Attributes)
 Dimdistrict (Demography & Geography)
 Dimstores (Stores locations)
 FactSales (Core Transaction Metrics)
+To maintain clean data integrity across regional stores, `Dimdistrict` serves as a normalized geographic dimension linked to `Dimstores`, feeding into the central `FactSales` engine.
 
 ### **Step 5: Relational Key Mapping:**
 
