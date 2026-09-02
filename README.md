@@ -27,15 +27,15 @@ Evaluated data quality by checking null values. However, data has no null values
 
 ### **Step 4: Data Modeling & Architecture:** 
 
-Structured a clean Star Schema by separating data into three dimension tables and one core fact table.
+Structured a normalized dimensional data model by separating reporting data into three dimension tables and one core fact table.
 
-Dimcustomer (Customer Attributes)
+**Dimcustomer** (Customer Attributes)
 
-Dimdistrict (Demography & Geography)
+**Dimdistrict** (Demography & Geography)
 
-Dimstores (Stores locations)
+**Dimstores** (Stores locations)
 
-FactSales (Core Transaction Metrics)
+**FactSales** (Core Transaction Metrics)
 
 To maintain clean data integrity across regional stores, **Dimdistrict** serves as a normalized geographic dimension linked to **Dimstores**, feeding into the central **FactSales** engine.
 
