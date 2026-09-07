@@ -184,7 +184,7 @@ The query returned NULL because every customer record currently contains exactly
 
 ## 1. Exploratory Data Analysis: High-Value Transactions
 
-![EDA High-Value Transactions Analysis](<./EDA: High-Value Transactions Analysis.png>)
+![EDA High-Value Transactions Analysis](./EDA_High_Value_Transactions_Analysis.png)
 
 ### 💰 Revenue Concentration & Category Balance
 * **Revenue Concentration:** Purchases $\ge$ **€500** drive **85.33%** of overall business revenue (**€389.10K**), despite comprising only **35%** of total transaction volume (**350 orders**).
