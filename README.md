@@ -184,7 +184,7 @@ The query returned NULL because every customer record currently contains exactly
 
 # Product Pricing & Elasticity Analysis Dashboard
 
-![Power BI Executive Dashboard](your-image-filename.png)
+![Product Pricing & Elasticity Analysis Dashboard](dashboard.png)
 
 ## 📊 Executive Summary & Key Findings
 
