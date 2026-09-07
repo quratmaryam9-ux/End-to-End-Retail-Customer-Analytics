@@ -184,7 +184,7 @@ The query returned NULL because every customer record currently contains exactly
 
 # Product Pricing & Elasticity Analysis Dashboard
 
-![Product Pricing & Elasticity Analysis Dashboard](./Product Pricing & Elasticity Analysis Dashboard.png)
+Product Pricing & Elasticity Analysis Dashboard.png
 
 ## 📊 Executive Summary & Key Findings
 
