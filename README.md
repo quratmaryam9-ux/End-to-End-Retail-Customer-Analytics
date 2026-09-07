@@ -257,3 +257,23 @@ The query returned NULL because every customer record currently contains exactly
 * **Beauty Growth Promotions:** Deploy targeted promotional campaigns and expand inventory selections within the Beauty sector to close the **€13K–€14K** revenue gap relative to Electronics and Clothing.
 * **Q2 & Q4 Inventory Capitalization:** Align inventory stockpiling and promotional calendars to maximize revenue velocity ahead of peak demand spikes in **May** and the **Q4 holiday season (Nov–Dec)**.
 * **October Demand Generation:** Launch mid-autumn flash sales and targeted multi-buy discounts specifically structured to mitigate the sharp **October** revenue slump.
+
+## 5. Exploratory Data Analysis: Customer Retention & Spend Analysis
+
+![EDA Customer Retention and Spend Analysis](./EDA_Customer_Retention_Spend_Analysis.png)
+
+### 👥 VIP Revenue Concentration & Top Spender Baseline
+* **Top 10% VIP Share:** The top 10% decile of customers (VIP segment) generates **€174.2K (38.2%)** of total revenue, highlighting strong value concentration among top accounts.
+* **Mass Tier Balance:** The remaining 90% customer base accounts for **€281.8K (61.8%)** of total revenue, providing the baseline transactional volume.
+* **Customer Lifetime Value (CLV) Peak:** Peak Customer Lifetime Value reaches **€1,000** per account (led by accounts `CUST990` and `CUST994`), establishing a benchmark profile for lookalike acquisition models.
+
+### 🔄 Retention Tracking & Technical SQL Baseline
+* **Repeat Purchase Metric:** Analysis executed via T-SQL window functions (`LAG`) identified **0% repeat orders** (`N/A / Zero Repeat Order` for `Days_Between_Orders`), confirming that every recorded customer currently possesses exactly 1 transaction.
+* **Database Insight:** Inter-purchase interval calculations return null due to single-order transaction histories across the entire customer dataset, establishing an immediate operational priority for repeat-purchase workflows.
+* **Macro Aggregates:** Overall portfolio revenue consolidates at **€456,000** across all analyzed customer profiles.
+
+### 💡 Strategic Action Plan
+* **Dedicated VIP Account Loyalty:** Roll out exclusive retention perks, direct account management, and tailored VIP incentives to the top 10% decile to safeguard the **38.2% (€174.2K)** revenue anchor.
+* **Automated Post-Purchase Lifecycle Sequences:** Build automated email nurture sequences triggered immediately post-checkout to convert single-order accounts into repeat buyers and reduce `Days_Between_Orders`.
+* **Lookalike Audience Targeting:** Leverage account characteristics of top spenders (`CUST990`, `CUST994`) to refine paid acquisition targeting toward prospective high-CLV profiles.
+Instructions for GitHub:
