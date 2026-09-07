@@ -202,7 +202,7 @@ The query returned NULL because every customer record currently contains exactly
 
 ## 2. Exploratory Data Analysis: Product Pricing & Elasticity Analysis 
 
-![Product Pricing & Elasticity Analysis Dashboard](dashboard.png)
+![Product Pricing & Elasticity Analysis Dashboard](./Product_Pricing_Elasticity_Analysis.png)
 
 ### 📈 Pricing & Elasticity Dynamics
 * **Inelastic Demand Profile:** Transaction volumes remain stable across price points ranging from **€170 to €500**, indicating low price sensitivity among core customer segments.
