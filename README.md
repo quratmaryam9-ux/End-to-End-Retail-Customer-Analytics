@@ -220,4 +220,21 @@ The query returned NULL because every customer record currently contains exactly
 
 ---
 
+## 3. Exploratory Data Analysis: Basket Size & Purchasing Behavior
 
+![EDA Basket Size Analysis](./EDA_Basket_Size_Analysis.png)
+
+### 🧺 Basket Size Distribution & Category Behavior
+* **Balanced Demand Profile:** Customer order quantities demonstrate an even distribution across basket sizes, establishing a **2.51 unit** baseline average across all product categories.
+* **Peak Volume Driver:** 4-unit transaction orders lead overall volume with **263 orders**, showing strong consumer willingness to make multi-item purchases.
+* **Category Consistency:** The average basket size remains identical at **2.51 units** across Clothing (**894 units**), Electronics (**849 units**), and Beauty (**771 units**).
+
+### 📐 Statistical Dispersion & Quantity Metrics
+* **Central Tendencies:** Analysis confirms a Mean Quantity of **2.51**, a Median Quantity of **3.00**, and a Standard Deviation of **1.13 units**.
+* **Quantity Range:** Transaction basket sizes span between a minimum of **1 unit** and a maximum cap of **4 units**.
+* **Category Totals:** Electronics leads revenue contribution at **€156,905.00**, closely followed by Clothing at **€155,580.00** and Beauty at **€143,515.00** (Total Revenue: **€456,000.00** across **2,514 units**).
+
+### 💡 Strategic Action Plan
+* **Tiered Multi-Buy Incentives:** Implement targeted volume promotions (e.g., *"Buy 3, get the 4th at 20% off"*) to nudge single-unit (**253 orders**) and double-unit (**243 orders**) buyers toward 4-unit baskets.
+* **Cross-Category Recommendations:** Capitalize on the uniform **2.51 unit** category baseline by embedding automated product recommendations at checkout to maximize Average Order Value (AOV).
+* **High-Volume Threshold Marketing:** Focus promotional messaging around 4-unit bundling to align directly with existing consumer purchasing behavior.
