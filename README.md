@@ -238,3 +238,22 @@ The query returned NULL because every customer record currently contains exactly
 * **Tiered Multi-Buy Incentives:** Implement targeted volume promotions (e.g., *"Buy 3, get the 4th at 20% off"*) to nudge single-unit (**253 orders**) and double-unit (**243 orders**) buyers toward 4-unit baskets.
 * **Cross-Category Recommendations:** Capitalize on the uniform **2.51 unit** category baseline by embedding automated product recommendations at checkout to maximize Average Order Value (AOV).
 * **High-Volume Threshold Marketing:** Focus promotional messaging around 4-unit bundling to align directly with existing consumer purchasing behavior.
+
+## 4. Exploratory Data Analysis: Revenue Drivers & Sales Trends Over Time
+
+![EDA Revenue Drivers and Sales Trends](./EDA_Revenue_Drivers_Sales_Trends.png)
+
+### 📈 Revenue Drivers & Seasonal Sales Trends
+* **Product Category Performance:** **Electronics** leads total revenue at **€157K**, followed closely by **Clothing** at **€156K**, while **Beauty** generates the lowest sales share at **€144K**.
+* **Seasonal Peak Identification:** Monthly trend analysis highlights **May** as the annual peak sales month, accompanied by strong purchasing momentum in **February**, **November**, and **December**.
+* **Autumn Trough Period:** Sales experience a sharp seasonal decline during **October**, identifying a key window requiring proactive demand generation.
+
+### 📐 Macro Metrics & Category Dispersion
+* **Portfolio Aggregates:** Total revenue generated across the monitored timeframe reaches **€456,000** across **1,000 total orders**.
+* **Order Value Stability:** Average Order Value (AOV) stabilizes at **€456.00**, demonstrating high transaction consistency across seasons.
+* **Category Variance:** Revenue distribution remains relatively balanced across all three categories, though Beauty trails top-performing Electronics by **€13K**.
+
+### 💡 Strategic Action Plan
+* **Beauty Growth Promotions:** Deploy targeted promotional campaigns and expand inventory selections within the Beauty sector to close the **€13K–€14K** revenue gap relative to Electronics and Clothing.
+* **Q2 & Q4 Inventory Capitalization:** Align inventory stockpiling and promotional calendars to maximize revenue velocity ahead of peak demand spikes in **May** and the **Q4 holiday season (Nov–Dec)**.
+* **October Demand Generation:** Launch mid-autumn flash sales and targeted multi-buy discounts specifically structured to mitigate the sharp **October** revenue slump.
