@@ -203,8 +203,14 @@ The query returned NULL because every customer record currently contains exactly
 * **Cross-Category Bundling:** Pair high-margin Beauty products with high-volume Clothing items to boost overall Average Order Value (AOV).
 
 ---
+### 📊 Key Findings: High-Value Transactions Analysis
 
-## 🛠️ Technical Architecture & Design System
-* **Data Modeling:** Star-schema architecture optimized for cross-category aggregations.
-* **DAX Metrics:** Custom measures for Average Unit Price, dynamic AOV, and volume rankings.
-* **UI/UX Design:** Enterprise minimalist visual layout adhering to standard corporate guidelines (Segoe UI typography, `#0A4D8C` / `#00A896` color scheme, 8px border radiuses, zero drop shadows).
+#### 1. Revenue Concentration & Category Balance
+* **Revenue Concentration:** Purchases $\ge$ €500 drive **85.33%** of overall business revenue, despite comprising only **35%** of total transaction volume.
+* **Category Balance:** High-value volume is distributed across all product lines. **Clothing** leads with 122 high-value orders, followed by **Electronics** (117) and **Beauty** (111).
+* **Strategic Takeaway:** Customer retention programs, VIP rewards, and premium cross-sell flows must prioritize this high-value cohort to safeguard core profitability.
+
+#### 2. Statistical Distribution & Store Variance
+* **Distribution Profile:** Sales data exhibits a right-skewed distribution, with lower order amounts forming the primary transaction cluster.
+* **Central Tendency & Store Variance:** Median transaction values and interquartile ranges (IQRs) remain identical across all monitored stores (`WK058` through `WSTR005`).
+* **Upper Ceiling:** SQL CTE ranking and box plot upper whiskers establish **€2,000** as the definitive high-value transaction cap across the network.
