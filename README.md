@@ -182,7 +182,25 @@ The query returned NULL because every customer record currently contains exactly
 
 # 📊 Executive Dashboard & Portfolio Summary
 
-## 1. Product Pricing & Elasticity Analysis Dashboard
+## 1. Exploratory Data Analysis: High-Value Transactions
+
+![EDA High-Value Transactions Analysis](<./EDA: High-Value Transactions Analysis.png>)
+
+### 💰 Revenue Concentration & Category Balance
+* **Revenue Concentration:** Purchases $\ge$ **€500** drive **85.33%** of overall business revenue (**€389.10K**), despite comprising only **35%** of total transaction volume (**350 orders**).
+* **Category Balance:** High-value volume is evenly distributed across product lines: **Clothing** leads with **122** high-value orders, followed by **Electronics** (**117**) and **Beauty** (**111**).
+
+### 📐 Statistical Distribution & Store Variance
+* **Distribution Profile:** Sales data exhibits a right-skewed distribution, with lower order amounts forming the primary transaction cluster.
+* **Central Tendency & Store Variance:** Median transaction values and interquartile ranges (IQRs) remain identical across all monitored stores (`WK058` through `WSTR005`), showing consistent regional performance network-wide.
+* **Upper Ceiling:** Advanced SQL CTE ranking and box plot upper whiskers establish **€2,000** as the definitive high-value transaction cap across the network.
+
+### 💡 Strategic Action Plan
+* **VIP Loyalty & Retention Tier:** Implement automated post-purchase marketing and VIP incentives specifically targeted at the $\ge$ **€500** buyer segment to safeguard the core **85.33%** revenue base.
+* **Cross-Category Up-Selling:** Utilize high-volume **Clothing** orders as the gateway to bundle and cross-sell higher-margin **Beauty** and **Electronics** items, pushing basket sizes toward the **€2,000** transaction ceiling.
+* **Network-Wide Campaign Rollouts:** Deploy promotional strategies uniformly across all retail locations (`WK058`–`WSTR005`), avoiding unnecessary regional localization costs given the uniform store performance profile.
+
+## 2. Exploratory Data Analysis: Product Pricing & Elasticity Analysis 
 
 ![Product Pricing & Elasticity Analysis Dashboard](dashboard.png)
 
@@ -202,20 +220,4 @@ The query returned NULL because every customer record currently contains exactly
 
 ---
 
-## 2. Exploratory Data Analysis: High-Value Transactions
 
-![EDA High-Value Transactions Analysis](<./EDA: High-Value Transactions Analysis.png>)
-
-### 💰 Revenue Concentration & Category Balance
-* **Revenue Concentration:** Purchases $\ge$ **€500** drive **85.33%** of overall business revenue (**€389.10K**), despite comprising only **35%** of total transaction volume (**350 orders**).
-* **Category Balance:** High-value volume is evenly distributed across product lines: **Clothing** leads with **122** high-value orders, followed by **Electronics** (**117**) and **Beauty** (**111**).
-
-### 📐 Statistical Distribution & Store Variance
-* **Distribution Profile:** Sales data exhibits a right-skewed distribution, with lower order amounts forming the primary transaction cluster.
-* **Central Tendency & Store Variance:** Median transaction values and interquartile ranges (IQRs) remain identical across all monitored stores (`WK058` through `WSTR005`), showing consistent regional performance network-wide.
-* **Upper Ceiling:** Advanced SQL CTE ranking and box plot upper whiskers establish **€2,000** as the definitive high-value transaction cap across the network.
-
-### 💡 Strategic Action Plan
-* **VIP Loyalty & Retention Tier:** Implement automated post-purchase marketing and VIP incentives specifically targeted at the $\ge$ **€500** buyer segment to safeguard the core **85.33%** revenue base.
-* **Cross-Category Up-Selling:** Utilize high-volume **Clothing** orders as the gateway to bundle and cross-sell higher-margin **Beauty** and **Electronics** items, pushing basket sizes toward the **€2,000** transaction ceiling.
-* **Network-Wide Campaign Rollouts:** Deploy promotional strategies uniformly across all retail locations (`WK058`–`WSTR005`), avoiding unnecessary regional localization costs given the uniform store performance profile.
