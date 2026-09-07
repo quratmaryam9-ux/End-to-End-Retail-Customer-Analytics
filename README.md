@@ -182,27 +182,29 @@ The query returned NULL because every customer record currently contains exactly
 
 ## **Executive Dashboards Summary Insights:**
 
-## **Product Pricing Impact:**
+# Product Pricing & Elasticity Analysis Dashboard
 
-<img width="1315" height="727" alt="Image" src="https://github.com/user-attachments/assets/10599f2a-e1e9-426f-966c-c9284ba941c5" />
+![Power BI Executive Dashboard](your-image-filename.png)
 
-## **EDA: PRICING ANALYSIS:**
+## 📊 Executive Summary & Key Findings
 
-<img width="1311" height="756" alt="Image" src="https://github.com/user-attachments/assets/c14f38a0-36bc-4c80-af48-bc7678963314" />
+### 1. Pricing & Elasticity Dynamics
+* **Inelastic Demand Profile:** Transaction volumes remain stable across price points ranging from €170 to €500, indicating low price sensitivity among core customer segments.
+* **Zero Correlation:** Trend line analysis confirms minimal volume decay relative to unit price increases, unlocking margin optimization opportunities.
+* **Order Clustering:** Transaction quantities consistently cluster between 1 and 4 units per order across all price tiers.
 
-## **EDA: Basket Size:**
+### 2. Category Performance & Revenue Metrics
+* **Beauty:** Delivers the highest Average Unit Price (€184.06) with strong margin potential.
+* **Electronics:** Drives core revenue (€156,905) through balanced volume and steady pricing.
+* **Clothing:** Serves as a high-volume anchor (€174.29 average unit price), capturing strong order frequency (894 units sold).
 
-<img width="1348" height="718" alt="Image" src="https://github.com/user-attachments/assets/20b35898-9cac-471d-9374-90c81d5effc1" />
+### 3. Strategic Action Plan
+* **Targeted Price Optimization:** Implement selective price increases on core, high-performing SKUs with minimal volume loss risk.
+* **Cross-Category Bundling:** Pair high-margin Beauty products with high-volume Clothing items to boost overall Average Order Value (AOV).
 
-## **EDA: Basket Size by Category:**
+---
 
-<img width="1353" height="752" alt="Image" src="https://github.com/user-attachments/assets/43d028cb-b86e-4353-ac5c-c565de557eb1" />
-
-## **Sales Trends:**
-
-<img width="1355" height="762" alt="Image" src="https://github.com/user-attachments/assets/c8518961-f281-4990-8c9a-a0745b7c00c0" />
-
-## **Customers Retention & Spendings:**
-
-<img width="1343" height="752" alt="Image" src="https://github.com/user-attachments/assets/c3185319-f519-4421-853f-fa9294ddf1b8" />
-
+## 🛠️ Technical Architecture & Design System
+* **Data Modeling:** Star-schema architecture optimized for cross-category aggregations.
+* **DAX Metrics:** Custom measures for Average Unit Price, dynamic AOV, and volume rankings.
+* **UI/UX Design:** Enterprise minimalist visual layout adhering to standard corporate guidelines (Segoe UI typography, `#0A4D8C` / `#00A896` color scheme, 8px border radiuses, zero drop shadows).
