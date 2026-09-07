@@ -180,37 +180,42 @@ Engineered a T-SQL query utilizing LAG() and DATEDIFF() to calculate the average
 #### **Data Quality Insights:** 
 The query returned NULL because every customer record currently contains exactly one order, indicating that customer repeat retention is 0% and highlighting a critical business opportunity for automated post-purchase marketing.
 
-## **Executive Dashboards Summary Insights:**
+# 📊 Executive Dashboard & Portfolio Summary
 
-# Product Pricing & Elasticity Analysis Dashboard
+## 1. Product Pricing & Elasticity Analysis Dashboard
 
 ![Product Pricing & Elasticity Analysis Dashboard](dashboard.png)
 
-## 📊 Executive Summary & Key Findings
+### 📈 Pricing & Elasticity Dynamics
+* **Inelastic Demand Profile:** Transaction volumes remain stable across price points ranging from **€170 to €500**, indicating low price sensitivity among core customer segments.
+* **Zero Correlation:** Trend line analysis confirms minimal volume decay relative to unit price increases, unlocking immediate margin optimization opportunities.
+* **Order Clustering:** Transaction quantities consistently cluster between **1 and 4 units** per order across all price tiers.
 
-### 1. Pricing & Elasticity Dynamics
-* **Inelastic Demand Profile:** Transaction volumes remain stable across price points ranging from €170 to €500, indicating low price sensitivity among core customer segments.
-* **Zero Correlation:** Trend line analysis confirms minimal volume decay relative to unit price increases, unlocking margin optimization opportunities.
-* **Order Clustering:** Transaction quantities consistently cluster between 1 and 4 units per order across all price tiers.
+### 🏷️ Category Performance & Revenue Metrics
+* **Beauty:** Delivers the highest Average Unit Price (**€184.06**) with strong margin potential.
+* **Electronics:** Drives core revenue (**€156,905**) through balanced volume and steady pricing.
+* **Clothing:** Serves as a high-volume anchor (**€174.29** average unit price), capturing strong order frequency (**894 units sold**).
 
-### 2. Category Performance & Revenue Metrics
-* **Beauty:** Delivers the highest Average Unit Price (€184.06) with strong margin potential.
-* **Electronics:** Drives core revenue (€156,905) through balanced volume and steady pricing.
-* **Clothing:** Serves as a high-volume anchor (€174.29 average unit price), capturing strong order frequency (894 units sold).
-
-### 3. Strategic Action Plan
+### 💡 Strategic Action Plan
 * **Targeted Price Optimization:** Implement selective price increases on core, high-performing SKUs with minimal volume loss risk.
 * **Cross-Category Bundling:** Pair high-margin Beauty products with high-volume Clothing items to boost overall Average Order Value (AOV).
 
 ---
-### 📊 Key Findings: High-Value Transactions Analysis
 
-#### 1. Revenue Concentration & Category Balance
-* **Revenue Concentration:** Purchases $\ge$ €500 drive **85.33%** of overall business revenue, despite comprising only **35%** of total transaction volume.
-* **Category Balance:** High-value volume is distributed across all product lines. **Clothing** leads with 122 high-value orders, followed by **Electronics** (117) and **Beauty** (111).
-* **Strategic Takeaway:** Customer retention programs, VIP rewards, and premium cross-sell flows must prioritize this high-value cohort to safeguard core profitability.
+## 2. Exploratory Data Analysis: High-Value Transactions
 
-#### 2. Statistical Distribution & Store Variance
+![EDA High-Value Transactions Analysis](<./EDA: High-Value Transactions Analysis.png>)
+
+### 💰 Revenue Concentration & Category Balance
+* **Revenue Concentration:** Purchases $\ge$ **€500** drive **85.33%** of overall business revenue (**€389.10K**), despite comprising only **35%** of total transaction volume (**350 orders**).
+* **Category Balance:** High-value volume is evenly distributed across product lines: **Clothing** leads with **122** high-value orders, followed by **Electronics** (**117**) and **Beauty** (**111**).
+
+### 📐 Statistical Distribution & Store Variance
 * **Distribution Profile:** Sales data exhibits a right-skewed distribution, with lower order amounts forming the primary transaction cluster.
-* **Central Tendency & Store Variance:** Median transaction values and interquartile ranges (IQRs) remain identical across all monitored stores (`WK058` through `WSTR005`).
-* **Upper Ceiling:** SQL CTE ranking and box plot upper whiskers establish **€2,000** as the definitive high-value transaction cap across the network.
+* **Central Tendency & Store Variance:** Median transaction values and interquartile ranges (IQRs) remain identical across all monitored stores (`WK058` through `WSTR005`), showing consistent regional performance network-wide.
+* **Upper Ceiling:** Advanced SQL CTE ranking and box plot upper whiskers establish **€2,000** as the definitive high-value transaction cap across the network.
+
+### 💡 Strategic Action Plan
+* **VIP Loyalty & Retention Tier:** Implement automated post-purchase marketing and VIP incentives specifically targeted at the $\ge$ **€500** buyer segment to safeguard the core **85.33%** revenue base.
+* **Cross-Category Up-Selling:** Utilize high-volume **Clothing** orders as the gateway to bundle and cross-sell higher-margin **Beauty** and **Electronics** items, pushing basket sizes toward the **€2,000** transaction ceiling.
+* **Network-Wide Campaign Rollouts:** Deploy promotional strategies uniformly across all retail locations (`WK058`–`WSTR005`), avoiding unnecessary regional localization costs given the uniform store performance profile.
