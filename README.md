@@ -1,4 +1,8 @@
 ## End-to-End-Retail-Customer-Analytics
+## Data and limitations
+- Data: Kaggel dataset (1,000 transactions) and Open Data Antwerpen demographics.
+- Each order in the sample belongs to a different customer, so repeat-purchase and retention metrics cannot be calculated.
+- "Top 10%" segmentation ranks customers/transactions.
 
 ## Business Problem and Strategic Context:
 
