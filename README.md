@@ -151,7 +151,7 @@ Executed 'INNER JOIN' queries between Factsales and dimcustomer to identify top 
                           FROM FactSales
                           GROUP BY Customer_ID;
 
-### **Step 13: Retention Tracking & Purchase Gap:
+### Step 13: Retention Tracking & Purchase Gap:
 
 Engineered a T-SQL query utilizing LAG() and DATEDIFF() to calculate the average repeat purchase interval.
 
